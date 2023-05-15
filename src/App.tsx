@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ShowHelthData from './component/ShowHelthData/ShowHelthData';
+import { HelthDataContaxWrapper } from './component/maincontax/HelthDataContax';
 
 function App() {
+
+let obj ={
+  
+   a: 5,
+   b:25
+
+}
+let newA = obj.hasOwnProperty("a") ;
+let newB = obj.hasOwnProperty("d");
+
+console.log("result " , newA);
+console.log("result " , newB);
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+          <HelthDataContaxWrapper>
+
+                <ShowHelthData/>
+
+          </HelthDataContaxWrapper>
+  </>
   );
 }
 
