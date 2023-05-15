@@ -15,6 +15,8 @@ const HelthDataContax= createContext({
 });   
 
 
+
+
  
 
 
@@ -30,7 +32,16 @@ export const HelthDataContaxWrapper:React.FC<any> = (props)=>{
 
             <HelthDataContax.Provider value={
 
+            // when i am trying to chnage this below initial state to state i am geting the erro plz help me to resolve it .
+
+             // if possible  plz provide the detail explanation about it in the form of comment ........
+
+
               {usersdata:initialstate}
+
+
+              //{usersdata:state}
+
 
           
             }> 
